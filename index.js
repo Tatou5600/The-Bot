@@ -1,6 +1,8 @@
 const { channel } = require("diagnostics_channel");
 const Discord = require("discord.js");
 const Client = new Discord.Client({intents : ["GUILDS","GUILD_MESSAGES","GUILD_MEMBERS"]});
+require('dotenv').config();
+
 
 Client.on("ready", ()=>{
     console.log("Bot Ready.")
@@ -70,4 +72,4 @@ Client.on("interactionCreate", click =>{
 })
 
 
-Client.login("OTkyODM5MzY0OTE0NzA4Njkw.GXZc_2.XbFYd94Vgz5sU7m0n7LgiqVEjZWJZclFNoiUr8");
+Client.login(process.env.discord);
