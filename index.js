@@ -70,4 +70,4 @@ Client.on("interactionCreate", click =>{
 })
 
 
-Client.login("OTkyODM5MzY0OTE0NzA4Njkw.GXZc_2.XbFYd94Vgz5sU7m0n7LgiqVEjZWJZclFNoiUr8");
+Client.login("token du bot");
